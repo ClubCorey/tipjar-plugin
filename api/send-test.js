@@ -5,10 +5,10 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 export default async function handler(req, res) {
   try {
     await sendgrid.send({
-      to: 'corey.thorn@gmail.com',               // ✅ recipient (you)
-      from: 'test@usetipjar.com',                 // ✅ this must be your authenticated domain
-      subject: 'Test Email from SendGrid via Vercel',
-      text: 'Hello! This is a test email sent from your deployed Vercel app.',
+      to: 'corey.thorn@gmail.com',      // 👈 Your real inbox here
+      from: 'test@usetipjar.com',        // 👈 Your verified domain
+      subject: 'SendGrid Test Email',
+      text: 'This is a test email sent from Vercel using SendGrid.',
     });
 
     res.status(200).json({ message: 'Email sent successfully' });
