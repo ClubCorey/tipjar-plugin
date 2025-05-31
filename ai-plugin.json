@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "TipJar.bot",
+  "name_for_model": "tipjar",
+  "description_for_human": "Auto-donate to knowledge sources like Wikipedia when AI cites them.",
+  "description_for_model": "Track Wikipedia citations in chat and suggest small donations to support open knowledge.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://usetipjar.com/openapi.yaml"
+  },
+  "logo_url": "https://usetipjar.com/logo.png",
+  "contact_email": "support@usetipjar.com",
+  "legal_info_url": "https://usetipjar.com/privacy"
+}
