@@ -1,1 +1,24 @@
+openapi: 3.0.0
+info:
+  title: TipJar API
+  version: 1.0.0
+paths:
+  /track:
+    post:
+      summary: Log a Wikipedia citation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                source:
+                  type: string
+                  enum: [wikipedia, archive, stackoverflow]
+      responses:
+        '200':
+          description: Citation logged
 
