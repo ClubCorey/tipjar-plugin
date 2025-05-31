@@ -25,4 +25,12 @@
       .then(data => {
         const dollars = (data.total_citations * 0.01).toFixed(2);
         document.getElementById('tip-total').innerText =
-          `TipJar users have suggested
+          `TipJar users have suggested $${dollars} in donations so far!`;
+      })
+      .catch(() => {
+        document.getElementById('tip-total').innerText =
+          `We couldn't load the live total right now.`;
+      });
+  </script>
+</body>
+</html>
